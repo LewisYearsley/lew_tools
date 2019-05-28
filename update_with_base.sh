@@ -9,8 +9,7 @@ then
     echo "Pulling latest $clean_branch"
     git pull --rebase
 else
-    echo "Updating $clean_branch with $base_branch"
-    echo $clean_branch
+    echo "Updating $clean_branch with $base_branch"    
 
     git checkout develop
     git pull --rebase
