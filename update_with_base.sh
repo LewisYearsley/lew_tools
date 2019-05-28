@@ -11,8 +11,8 @@ then
 else
     echo "Updating $clean_branch with $base_branch"    
 
-    git checkout develop
+    git checkout $base_branch
     git pull --rebase
     git checkout $clean_branch
-    git merge develop
+    git merge $base_branch
 fi
